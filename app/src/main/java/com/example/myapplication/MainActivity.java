@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 Button B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11;
 TextView T1;
-private int i;
+private int i = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
