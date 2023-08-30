@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-Button B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11;
+Button B1,B2,B3,B4,B5,B6,B7,B8,B9,B10;
+ImageButton B11;
 TextView T1;
 private int i = 0;
     @Override
@@ -27,7 +29,7 @@ private int i = 0;
         B9=findViewById(R.id.button3);
         B10=findViewById(R.id.button10);
         B11=findViewById(R.id.button11);
-        B11.setVisibility(View.INVISIBLE);
+        B11.setVisibility(View.VISIBLE);
         T1=findViewById(R.id.textView);
         B1.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -111,7 +113,7 @@ private void hapus (){
             String NewNumber = Angka.substring(0, Angka.length()-1);
             T1.setText(NewNumber);
             if (NewNumber.isEmpty()){
-                B11.setVisibility(View.INVISIBLE);
+                B11.setVisibility(View.VISIBLE);
             }
         }
 }
